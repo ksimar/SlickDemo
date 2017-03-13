@@ -1,6 +1,8 @@
 package com.example
 
 import slick.jdbc.PostgresProfile.api._
+
+import scala.concurrent.Future
 //import slick.jdbc.MySQLProfile.api._
 
 
@@ -35,6 +37,14 @@ trait EmployeeComponent extends EmployeeTable {
   def updateNameById(empID: Int, name: String) = {
 
     db.run(employeeTableQuery.filter(_.id===empID).map(record=>(record.name)).update(name))
+  }
+
+  def upsert(emp: Employee): Future[Int] = {
+    db.run(employeeTableQuery.insertOrUpdate(emp))
+  }
+
+  def getAll() = {
+    db.run(employeeTableQuery.result)
   }
 
 }

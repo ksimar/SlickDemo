@@ -1,6 +1,8 @@
 package com.example
 
 import slick.jdbc.PostgresProfile.api._
+
+import scala.concurrent.Future
 //import slick.jdbc.MySQLProfile.api._
 
 trait DependentTable extends EmployeeTable{
@@ -25,6 +27,24 @@ trait DependentComponent extends DependentTable {
   import driver.api._
   def create = db.run(dependentTableQuery.schema.create)
   def insert(dependent: Dependent) = db.run( dependentTableQuery += dependent )
+
+  def deleteById(id: Int) = {
+    db.run(dependentTableQuery.filter(_.id === id).delete)
+  }
+
+  def updateNameById(id: Int, name: String) = {
+
+    db.run(dependentTableQuery.filter(_.id===id).map(record=>(record.name)).update(name))
+  }
+
+  def upsert(dependent: Dependent): Future[Int] = {
+    db.run(dependentTableQuery.insertOrUpdate(dependent))
+  }
+
+  def getAll() = {
+    db.run(dependentTableQuery.result)
+  }
+
 }
 
 //object DependentComponent extends DependentComponent with MySqlComponent

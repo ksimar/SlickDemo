@@ -41,12 +41,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeTable.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmployeeTable.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/EmployeeTable.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="36" column="90" lean-forward="false" selection-start-line="36" selection-start-column="90" selection-end-line="36" selection-end-column="90" />
-              <folding />
+            <state relative-caret-position="542">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="32" selection-start-column="2" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="e#21#60#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,12 +63,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hello.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Hello.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/Hello.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
+              <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+              <folding>
+                <element signature="e#21#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,9 +78,11 @@
       <file leaf-file-name="ProjectTable.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/ProjectTable.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="578">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding>
+                <element signature="e#21#60#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,9 +90,11 @@
       <file leaf-file-name="DependentTable.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/DependentTable.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="434">
+              <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+              <folding>
+                <element signature="e#21#60#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,9 +163,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/example/MySqlComponent.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/example/PostgresComponent.scala" />
         <option value="$PROJECT_DIR$/src/main/resources/application.conf" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/example/EmployeeTable.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/example/DependentTable.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/example/ProjectTable.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/example/EmployeeTable.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/example/Hello.scala" />
       </list>
     </option>
@@ -825,7 +833,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#21#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -841,7 +851,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="45" />
-          <folding />
+          <folding>
+            <element signature="e#21#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -849,7 +861,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#21#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -912,7 +926,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="e#21#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -921,7 +937,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#21#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -937,7 +955,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#21#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -954,22 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/DBComponent.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/PostgresComponent.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -998,14 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/ProjectTable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/Dependent.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1014,27 +1010,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/Hello.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/PostgresComponent.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="36">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/DependentTable.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/DBComponent.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="72">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/EmployeeTable.scala">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="32" selection-start-column="2" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/ProjectTable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#21#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/DependentTable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding>
+            <element signature="e#21#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/example/Hello.scala">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="36" column="90" lean-forward="false" selection-start-line="36" selection-start-column="90" selection-end-line="36" selection-end-column="90" />
-          <folding />
+          <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+          <folding>
+            <element signature="e#21#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

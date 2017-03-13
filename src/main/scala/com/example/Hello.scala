@@ -1,6 +1,8 @@
 package com.example
 
+import scala.concurrent.Await
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.duration._
 
 object Hello extends App {
 
@@ -19,11 +21,14 @@ object Hello extends App {
   val insertProject2 = ProjectComponent.insert(Project(2, "Fitfyles"))
   val insertDependent1 = DependentComponent.insert(Dependent(1, "abc", "xyz", Some(12)))
   val insertDependent2 = DependentComponent.insert(Dependent(2, "def", "xyz", None))
-  val deleteEmp1 = EmployeeComponent.deleteById(5)
-  val updateEmp1 = EmployeeComponent.updateNameById(4,"Manan")
+  val deleteDependent1 = DependentComponent.deleteById(1)
+  val updateDependent1 = DependentComponent.updateNameById(2,"Mansi")
+  val upsertProject1 = ProjectComponent.upsert(Project(3, "java"))
+  val upsertDependent1 = DependentComponent.upsert(Dependent(3, "sonam","abc",Some(20)))
+  val selectAllEmployees = Await.result(EmployeeComponent.getAll(), 10000 second)
   println("deleted")
-
-  Thread.sleep(20000)
+  println("All employees: "+selectAllEmployees )
+  Thread.sleep(30000)
 
   //val res = insertRes.map(res => )
 }

@@ -1,6 +1,8 @@
 package com.example
 
 import slick.jdbc.PostgresProfile.api._
+
+import scala.concurrent.Future
 //import slick.jdbc.MySQLProfile.api._
 
 trait ProjectTable extends EmployeeTable{
@@ -25,6 +27,24 @@ trait ProjectComponent extends ProjectTable {
   def insert(prod: Project) = db.run{
     projectTableQuery += prod
   }
+
+  def deleteById(projId: Int) = {
+    db.run(projectTableQuery.filter(_.id === projId).delete)
+  }
+
+  def updateNameById(projID: Int, name: String) = {
+
+    db.run(projectTableQuery.filter(_.id===projID).map(record=>(record.name)).update(name))
+  }
+
+  def upsert(proj: Project): Future[Int] = {
+    db.run(projectTableQuery.insertOrUpdate(proj))
+  }
+
+  def getAll() = {
+    db.run(projectTableQuery.result)
+  }
+
 
 }
 
