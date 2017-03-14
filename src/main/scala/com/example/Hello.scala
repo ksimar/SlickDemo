@@ -26,9 +26,15 @@ object Hello extends App {
   val upsertProject1 = ProjectComponent.upsert(Project(3, "java"))
   val upsertDependent1 = DependentComponent.upsert(Dependent(3, "sonam","abc",Some(20)))
   val selectAllEmployees = Await.result(EmployeeComponent.getAll(), 10000 second)
+  val selectAllDependents = Await.result(DependentComponent.getAll(), 10000 second)
+  val selectAllProjects = Await.result(ProjectComponent.getAll(), 10000 second)
+  val searchEmployee = Await.result(EmployeeComponent.search(2), 10000 second)
   println("deleted")
   println("All employees: "+selectAllEmployees )
-  Thread.sleep(30000)
+  println("All employees: "+selectAllDependents )
+  println("All employees: "+selectAllProjects )
+  println("Searched Employee"+ searchEmployee)
+  Thread.sleep(20000)
 
   //val res = insertRes.map(res => )
 }

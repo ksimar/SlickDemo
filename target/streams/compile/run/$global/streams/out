@@ -14,49 +14,47 @@
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
 [0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
-[0m[[0mdebug[0m] [0mInterrupting thread PostgreSQL-JDBC-SharedTimer-1[0m
-[0m[[0mdebug[0m] [0m	Interrupted PostgreSQL-JDBC-SharedTimer-1[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-4[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-4[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB housekeeper[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB housekeeper[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB housekeeper[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB housekeeper[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-6[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-6[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-5[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-5[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-6[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-6[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-2[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-2[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-1[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-1[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-2[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-2[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB housekeeper[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB housekeeper[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-7[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-7[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-5[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-5[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-1[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-7[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-7[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-5[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-5[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-6[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-6[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-2[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-2[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-7[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-7[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-2[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-2[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-4[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-4[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-3[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-3[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-1[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-5[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-5[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-8[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-8[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-6[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-6[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-1[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-3[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-3[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-3[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-3[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-4[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-4[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-2[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-2[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-1[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-4[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-4[0m
+[0m[[0mdebug[0m] [0mInterrupting thread myMySqlDB-5[0m
+[0m[[0mdebug[0m] [0m	Interrupted myMySqlDB-5[0m
 [0m[[0mdebug[0m] [0mInterrupting thread Abandoned connection cleanup thread[0m
 [0m[[0mdebug[0m] [0m	Interrupted Abandoned connection cleanup thread[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-1[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-1[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-4[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-4[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-2[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-2[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread myPostgresDB-4[0m
-[0m[[0mdebug[0m] [0m	Interrupted myPostgresDB-4[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
 [0m[[0mdebug[0m] [0mExited with code 0[0m

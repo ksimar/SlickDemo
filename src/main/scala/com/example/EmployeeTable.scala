@@ -1,9 +1,9 @@
 package com.example
 
-import slick.jdbc.PostgresProfile.api._
+//import slick.jdbc.PostgresProfile.api._
 
 import scala.concurrent.Future
-//import slick.jdbc.MySQLProfile.api._
+import slick.jdbc.MySQLProfile.api._
 
 
 trait EmployeeTable {
@@ -47,7 +47,12 @@ trait EmployeeComponent extends EmployeeTable {
     db.run(employeeTableQuery.result)
   }
 
+  def search(id: Int) = {
+    db.run(employeeTableQuery.filter(_.id===id).result)
+  }
+
+
 }
 
-object EmployeeComponent extends EmployeeComponent with PostgresComponent
-//object EmployeeComponent extends EmployeeComponent with MySqlComponent
+//object EmployeeComponent extends EmployeeComponent with PostgresComponent
+object EmployeeComponent extends EmployeeComponent with MySqlComponent
