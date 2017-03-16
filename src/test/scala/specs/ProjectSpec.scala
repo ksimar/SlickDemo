@@ -35,8 +35,8 @@ class ProjectSpec extends AsyncFunSuite with ProjectComponent with DBCompForTest
     search(2).map(record => assert(record.size == 1))
   }
 
-  test("It should left join employees with project") {
-
-  }
+//  test("It should left join employees with project") {
+//     // leftJoinEmployee()
+//  }
 
 }

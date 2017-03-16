@@ -8,7 +8,7 @@ import slick.jdbc.MySQLProfile.api._
 
 trait EmployeeTable {
 
-  private[example] class EmployeeTable(tag: Tag) extends Table[Employee](tag, "employee") {
+  private[example] class EmployeeTable(tag: Tag) extends Table[Employee](tag, "experience") {
     val id = column[Int]("id", O.PrimaryKey)
     val name = column[String]("name")
     val experience = column[Double]("experience")

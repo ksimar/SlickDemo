@@ -8,7 +8,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 
 trait ProjectTable extends EmployeeTable{
 
-  private[example] class ProjectTable(tag: Tag) extends Table[Project](tag, "project") {
+  private[example] class ProjectTable(tag: Tag) extends Table[Project](tag, "project_table") {
     val id = column[Int]("id",O.PrimaryKey)
     val name = column[String]("name")
 
@@ -69,19 +69,22 @@ trait ProjectComponent extends ProjectTable {
     val join = for{
       (p,e) <- projectTableQuery join employeeTableQuery
     } yield((p,e))
+    db.run(join.to[List].result)
   }
 
-  def leftJoinEmployee() = {
-    val join = for{
-      (p,e) <- projectTableQuery joinLeft employeeTableQuery on(_.id == _.id)
-    } yield((p,e))
-  }
-
-  def fullJoinEmployee() = {
-    val join = for{
-      (p,e) <- projectTableQuery joinFull employeeTableQuery on(_.id == _.id)
-    } yield((p,e))
-  }
+//  def leftJoinEmployee() = {
+//    val join = for{
+//      (p,e) <- employeeTableQuery joinLeft projectTableQuery on(_.id == _.id)
+//    } yield((p,e))
+//    db.run(join.to[List].result)
+//  }
+//
+//  def fullJoinEmployee() = {
+//    val join = for{
+//      (p,e) <- projectTableQuery joinFull employeeTableQuery on(_.id == _.id)
+//    } yield(p,e)
+//    db.run(join.to[List].result)
+//  }
 
 }
 
