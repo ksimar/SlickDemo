@@ -4,10 +4,11 @@ package com.example
 
 import scala.concurrent.Future
 import slick.jdbc.MySQLProfile.api._
+import scala.concurrent.ExecutionContext.Implicits.global
 
 trait ProjectTable extends EmployeeTable{
 
-  private[example] class ProjectTable(tag: Tag) extends Table[Project](tag, "project_table") {
+  private[example] class ProjectTable(tag: Tag) extends Table[Project](tag, "project") {
     val id = column[Int]("id",O.PrimaryKey)
     val name = column[String]("name")
 
@@ -24,8 +25,8 @@ trait ProjectComponent extends ProjectTable {
   //val db = Database.forConfig("myPostgresDB")
   def create = db.run(projectTableQuery.schema.create)
 
-  def insert(prod: Project) = db.run{
-    projectTableQuery += prod
+  def insert(proj: Project) = db.run{
+    projectTableQuery += proj
   }
 
   def deleteById(projId: Int) = {
@@ -42,11 +43,44 @@ trait ProjectComponent extends ProjectTable {
   }
 
   def getAll() = {
-    db.run(projectTableQuery.result)
+    db.run(projectTableQuery.to[List].result)
   }
 
-  def search(id: Int) = {
-    db.run(projectTableQuery.filter(_.id===id).result)
+  def search(id: Int): Future[Option[Project]] = {
+    db.run(projectTableQuery.filter(_.id===id).result.headOption)
+  }
+
+  def combinedActions(proj1: Project, proj2: Project) = {
+    val create = projectTableQuery.schema.create
+    val insert1 = projectTableQuery += proj1
+    val insert2 = projectTableQuery += proj2
+    val insert3 = projectTableQuery += Project(11, "abc")
+    val select = projectTableQuery.to[List].result
+    val select2 = projectTableQuery.filter(_.id === 1).to[List].result
+    val seq = insert1.andThen(insert3).andThen(insert2).cleanUp {
+      case Some(_) => select
+      case _ => select2
+    }
+
+    db.run(seq)
+  }
+
+  def joinEmployee() = {
+    val join = for{
+      (p,e) <- projectTableQuery join employeeTableQuery
+    } yield((p,e))
+  }
+
+  def leftJoinEmployee() = {
+    val join = for{
+      (p,e) <- projectTableQuery joinLeft employeeTableQuery on(_.id == _.id)
+    } yield((p,e))
+  }
+
+  def fullJoinEmployee() = {
+    val join = for{
+      (p,e) <- projectTableQuery joinFull employeeTableQuery on(_.id == _.id)
+    } yield((p,e))
   }
 
 }

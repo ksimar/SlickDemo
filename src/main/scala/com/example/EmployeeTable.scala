@@ -8,7 +8,7 @@ import slick.jdbc.MySQLProfile.api._
 
 trait EmployeeTable {
 
-  private[example] class EmployeeTable(tag: Tag) extends Table[Employee](tag, "experience") {
+  private[example] class EmployeeTable(tag: Tag) extends Table[Employee](tag, "employee") {
     val id = column[Int]("id", O.PrimaryKey)
     val name = column[String]("name")
     val experience = column[Double]("experience")
@@ -27,7 +27,7 @@ trait EmployeeComponent extends EmployeeTable {
    import driver.api._
   //val db = Database.forConfig("myPostgresDB")
   def create = db.run(employeeTableQuery.schema.create)
-  def insert(emp: Employee) = db.run{
+  def insert(emp: Employee): Future[Int] = db.run{
     employeeTableQuery += emp
   }
   def deleteById(empId: Int) = {
@@ -44,11 +44,11 @@ trait EmployeeComponent extends EmployeeTable {
   }
 
   def getAll() = {
-    db.run(employeeTableQuery.result)
+    db.run(employeeTableQuery.to[List].result)
   }
 
   def search(id: Int) = {
-    db.run(employeeTableQuery.filter(_.id===id).result)
+    db.run(employeeTableQuery.filter(_.id===id).to[List].result)
   }
 
 

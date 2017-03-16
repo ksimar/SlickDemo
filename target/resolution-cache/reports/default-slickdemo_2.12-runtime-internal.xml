@@ -6,17 +6,29 @@
 		module="slickdemo_2.12"
 		revision="1.0"
 		conf="runtime-internal"
-		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170314104333"/>
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, scoveragePlugin"
+		date="20170315182152"/>
 	<dependencies>
 		<module organisation="mysql" name="mysql-connector-java">
-			<revision name="5.1.34" status="release" pubdate="20150508162545" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+			<revision name="5.1.34" status="release" pubdate="20150508162545" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
 				<license name="The GNU General Public License, Version 2" url="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"/>
 				<metadata-artifact status="no" details="" size="2538" time="0" location="/home/simar/.ivy2/cache/mysql/mysql-connector-java/ivy-5.1.34.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.pom"/>
 				<caller organisation="default" name="slickdemo_2.12" conf="compile, runtime-internal, runtime, optional" rev="5.1.34" rev-constraint-default="5.1.34" rev-constraint-dynamic="5.1.34" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="mysql-connector-java" type="jar" ext="jar" status="no" details="" size="960372" time="0" location="/home/simar/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.34.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.h2database" name="h2">
+			<revision name="1.4.193" status="release" pubdate="20161031175303" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.h2database.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+				<license name="MPL 2.0 or EPL 1.0" url="http://h2database.com/html/license.html"/>
+				<metadata-artifact status="no" details="" size="2454" time="0" location="/home/simar/.ivy2/cache/com.h2database/h2/ivy-1.4.193.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/h2database/h2/1.4.193/h2-1.4.193.pom"/>
+				<caller organisation="default" name="slickdemo_2.12" conf="compile, runtime-internal, runtime, optional" rev="1.4.193" rev-constraint-default="1.4.193" rev-constraint-dynamic="1.4.193" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="h2" type="jar" ext="jar" status="no" details="" size="1791969" time="0" location="/home/simar/.ivy2/cache/com.h2database/h2/jars/h2-1.4.193.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/h2database/h2/1.4.193/h2-1.4.193.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
