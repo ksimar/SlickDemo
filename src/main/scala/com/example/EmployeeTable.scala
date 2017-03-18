@@ -8,7 +8,7 @@ import slick.jdbc.MySQLProfile.api._
 
 trait EmployeeTable {
 
-  private[example] class EmployeeTable(tag: Tag) extends Table[Employee](tag, "experience") {
+  private[example] class EmployeeTable(tag: Tag) extends Table[Employee](tag, "employee") {
     val id = column[Int]("id", O.PrimaryKey)
     val name = column[String]("name")
     val experience = column[Double]("experience")
@@ -49,6 +49,16 @@ trait EmployeeComponent extends EmployeeTable {
 
   def search(id: Int) = {
     db.run(employeeTableQuery.filter(_.id===id).to[List].result)
+  }
+
+  def maxExperience = {
+    val max = employeeTableQuery.map(_.experience).max
+    db.run(max.result)
+  }
+
+  def plainSQL = {
+    val plainSQLAction = sql"select id, name from employee where id = 1".as[(Int, String)]
+    db.run(plainSQLAction)
   }
 
 

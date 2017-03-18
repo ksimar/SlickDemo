@@ -51,14 +51,14 @@ trait ProjectComponent extends ProjectTable {
   }
 
   def combinedActions(proj1: Project, proj2: Project) = {
-    val create = projectTableQuery.schema.create
+   // val create = projectTableQuery.schema.create
     val insert1 = projectTableQuery += proj1
-    val insert2 = projectTableQuery += proj2
     val insert3 = projectTableQuery += Project(11, "abc")
+    val insertToEmployee = employeeTableQuery += Employee(11, "Bharti", 30)
     val select = projectTableQuery.to[List].result
     val select2 = projectTableQuery.filter(_.id === 1).to[List].result
-    val seq = insert1.andThen(insert3).andThen(insert2).cleanUp {
-      case Some(_) => select
+    val seq = insert1.andThen(insert3).cleanUp {
+      case Some(_) => insertToEmployee.andThen(insert3)
       case _ => select2
     }
 
@@ -71,6 +71,8 @@ trait ProjectComponent extends ProjectTable {
     } yield((p,e))
     db.run(join.to[List].result)
   }
+
+
 
 //  def leftJoinEmployee() = {
 //    val join = for{
